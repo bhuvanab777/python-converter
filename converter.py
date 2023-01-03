@@ -1,4 +1,5 @@
 import json
+import os
 import xmltodict
 
 with open('input.xml') as xml_file:
