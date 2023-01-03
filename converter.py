@@ -11,7 +11,7 @@ with open('input.xml') as xml_file:
     
     with open('output.json', 'w') as json_file:
         
-        if os.getenv("ENABLE"): 
+        if os.getenv("ENABLE") == 'true': 
             
             json_file.write(json_conversion)
 
