@@ -16,7 +16,7 @@ jobs:
   build:
     
     runs-on: self-hosted
-    environment: Prod
+    environment: Dev
     env:
       ENABLE: ${{ secrets.ENABLE }}
     steps:
@@ -34,3 +34,5 @@ jobs:
       with:
         name: output-artifact
         path: output.json
+    - name: Print Secret
+      run: echo $ENABLE
